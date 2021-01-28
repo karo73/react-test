@@ -18,7 +18,7 @@ const Nav: React.FC<Props> = ({ navItems, updateState }) => {
                       <li className="nav__item" key={index}>
                           <NavLink
                               className="nav__link"
-                              to={'/' + item.id}
+                              to={'/react-test/build/' + item.id}
                               activeClassName="nav__link--active"
                               onClick={() => updateState({ currentId: item.id })}
                           >{item.name}</NavLink>
